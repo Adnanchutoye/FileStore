@@ -21,12 +21,12 @@ class Bot(Client):
     def __init__(self):
         super().__init__(
             name="Bot", 'Rin Nanakura')
-            api_id=APP_ID, 7406407460:AAEeaplEqJ-B-5KpBC0HYxKtloKfWcJ2vYE))
+            api_id=APP_ID, 4e81464b29d79c58d0ad8a0c55ece4a5))
             plugins={
                 "root": "plugins"
             },
-            workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN
+            workers= 'obito')),
+            bot_token= '7406407460:AAEeaplEqJ-B-5KpBC0HYxKtloKfWcJ2vYE'))
         )
         self.LOGGER = LOGGER
 
