@@ -20,7 +20,7 @@ name ="""
 class Bot(Client):
     def __init__(self):
         super().__init__(
-            name="Bot", 'Rin Nanakura'))
+            name="Bot", 'Rin Nanakura')
             api_id=APP_ID, '7403636496:AAGguUeAV_riwDHP4xVUl-ImB-8Qs01NZnY))
             plugins={
                 "root": "plugins"
