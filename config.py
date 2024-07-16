@@ -28,7 +28,7 @@ OWNER = os.environ.get("OWNER", "Rin_Nanakura")
 OWNER_ID = int(os.environ.get("OWNER_ID", "7432102513"))
 
 #Port
-PORT = os.environ.get("PORT", "8030")
+PORT = os.environ.get("PORT", "8080")
 
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Umaid:umaid@cluster0.k2yxsvu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -36,7 +36,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("gijiharem_hindi", "-1002181571156"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("Anime_Sub_Society", "-1001930406310"))
+FORCE_SUB_CHANNEL = int(os.environ.get("Anime_Sub_Society", "-1001930406310"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
