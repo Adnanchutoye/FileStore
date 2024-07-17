@@ -32,10 +32,10 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Umaid:umaid@cluster0.k2yx
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluser0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL_1 = int(os.environ.get("FORCE_SUB_CHANNEL_1", "-1001930406310"))
-FORCE_SUB_CHANNEL_2 = int(os.environ.get("FORCE_SUB_CHANNEL_2", "-1002072642438"))
-FORCE_SUB_CHANNEL_3 = int(os.environ.get("FORCE_SUB_CHANNEL_3", "-1002181571156"))
-FORCE_SUB_CHANNEL_4 = int(os.environ.get("FORCE_SUB_CHANNEL_4", "-1002112596877"))
+FORCE_SUB_CHANNEL_1 = int(os.environ.get("Anime_Hindi_Sub_Society", "-1001930406310"))
+FORCE_SUB_CHANNEL_2 = int(os.environ.get("✨_ONGOING_SOCIETY_✨", "-1002072642438"))
+FORCE_SUB_CHANNEL_3 = int(os.environ.get("Pseudo_Harem_Hindi_Subbed", "-1002181571156"))
+FORCE_SUB_CHANNEL_4 = int(os.environ.get("Wistoria_Wand_and_Sword_Hindi_Subbed", "-1002112596877"))
 
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
