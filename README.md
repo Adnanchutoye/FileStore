@@ -10,7 +10,7 @@
 
 ##
 
-**If you need any more modes in repo or If you find out any bugs, mention in <b>[sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://github.com/weebs_support)  ➻  [ᴍɪᴋᴇʏ](https://t.me/sewxiy) </b>**
+**If you need any more modes in repo or If you find out any bugs, mention in <b>[sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://github.com/ahss_help_zone)  ➻  [obito](https://t.me/i_killed_my_clan)</b>**
 
 # ʙʀᴀɴᴄʜ
 * <b>𝟸 ғsᴜʙ - [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://github.com/Codeflix-Bots/FileStore)</b>
