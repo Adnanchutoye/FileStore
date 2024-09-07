@@ -49,3 +49,50 @@ async def new_post(client: Client, message: Message):
     except Exception as e:
         print(e)
         pass
+        if CLONE_MODE == True:
+                buttons.append([InlineKeyboardButton('🤖 Cʀᴇᴀᴛᴇ Yᴏᴜʀ Oᴡɴ Cʟᴏɴᴇ Bᴏᴛ 🤖', callback_data='clone')])
+            reply_markup = InlineKeyboardMarkup(buttons)
+            m=await message.reply_sticker("CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ") 
+            await asyncio.sleep(1)
+            await m.delete()
+            await message.reply_photo(
+                photo=random.choice(PICS),
+                caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
+                reply_markup=reply_markup,
+                parse_mode=enums.ParseMode.HTML
+            )
+            return 
+    try:
+        pre, file_id = data.split('_', 1)
+    except:
+        file_id = data
+        pre = ""
+    if data.split("-", 1)[0] == "BATCH":
+        sts = await message.reply("<b>Please wait...</b>")
+        file_id = data.split("-", 1)[1]
+        msgs = BATCH_FILES.get(file_id)
+        if not msgs:
+            file = await client.download_media(file_id)
+            try: 
+                with open(file) as file_data:
+                    msgs=json.loads(file_data.read())
+            except:
+                await sts.edit("FAILED")
+                return await client.send_message(LOG_CHANNEL, "UNABLE TO OPEN FILE.")
+            os.remove(file)
+            BATCH_FILES[file_id] = msgs
+
+        filesarr = []
+        for msg in msgs:
+            title = msg.get("title")
+            size=get_size(int(msg.get("size", 0)))
+            f_caption=msg.get("caption", "")
+            if BATCH_FILE_CAPTION:
+                try:
+                    f_caption=BATCH_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+                except Exception as e:
+                    logger.exception(e)
+                    f_caption=f_caption
+            if f_caption is None:
+                f_caption = f"{title}"
+            try:
