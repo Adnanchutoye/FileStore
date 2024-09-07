@@ -1,4 +1,4 @@
-#(©)Codeflix-Bots
+#(©)@team_society_1
 
 from pyrogram import __version__
 from bot import Bot
@@ -10,13 +10,17 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ ᴏᴡɴᴇʀ : <a href=https://t.me/rin_nanakura'>rin nanakura</a>\n○ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/ongoing_society'>ᴏɴɢᴏɪɴɢ sᴏᴄɪᴇᴛʏ</a>\n○ ᴀɴɪᴍᴇ sᴜʙ sᴏᴄɪᴇᴛʏ : <a href='https://t.me/anime_sub_society'>ᴀɴɪᴍᴇ sᴜʙ sᴏᴄɪᴇᴛʏ</a>\n○ ᴀɴɪᴍᴇ ᴄʜᴀᴛ : <a href='https://t.me/AHSS_HELP_ZONE'>sᴏᴄɪᴇᴛʏ ᴄʜᴀᴛ ᴢᴏɴᴇ</a>\n○ Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ : <a href='https://t.me/i_killed_my_clan'>๏ 𝐎ʙɪᴛᴏ ᴜᴄʜɪʜᴀ ๏</a></b>",
+            text = f"<b>○ ᴏᴡɴᴇʀ : <a href=https://t.me/rin_nanakura'>rin nanakura</a>\n○ ᴍʏ ᴜᴘᴅᴀᴛᴇs : <a href='https://t.me/ongoing_society'>ᴏɴɢᴏɪɴɢ sᴏᴄɪᴇᴛʏ</a>\n○ ᴀɴɪᴍᴇ sᴜʙ sᴏᴄɪᴇᴛʏ : <a href='https://t.me/anime_sub_society'>ᴀɴɪᴍᴇ sᴜʙ sᴏᴄɪᴇᴛʏ</a>\n○ ᴀɴɪᴍᴇ ᴄʜᴀᴛ : <a href='https://t.me/AHSS_HELP_ZONE'>sᴏᴄɪᴇᴛʏ ᴄʜᴀᴛ ᴢᴏɴᴇ</a>\n○ Dᴇᴠᴇʟᴏᴘᴇᴅ Bʏ : <a href='https://t.me/i_killed_my_clan'>๏ 𝐎ʙɪᴛᴏ ᴜᴄʜɪʜᴀ ๏</a></b>"
+            CLONE_ABOUT_TXT = """<b><blockquote>⍟───[ ᴍʏ ᴀʙᴏᴜᴛ ]───⍟</blockquote>
+               ⌬ ᴍʏ ɴᴀᴍᴇ : {}
+               ⌬ ᴍʏ ʙᴇsᴛ ғʀɪᴇɴᴅ : <a href='https://t.me/clone_owner'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
+               ⌬ ᴄʟᴏɴᴇᴅ ғʀᴏᴍ : <a href=https://t.me/{}>{}</a>
+               ⌬ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ,
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
                     [
-                    InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data = "close"),
-                    InlineKeyboardButton('⛩️ ʜᴏᴍᴇ ⛩️ ', url='https://t.me/Anime_sub_society')
+                    InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data = "close")
                     ]
                 ]
             )
